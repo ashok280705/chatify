@@ -12,7 +12,7 @@ pipeline {
                         passwordVariable: 'DOCKER_PASS'
                     )]) {
                         sh '''
-                        ssh -o StrictHostKeyChecking=no ubuntu@13.233.97.222 "
+                        ssh -o StrictHostKeyChecking=no ubuntu@3.7.122.54 "
 
                       
                         mkdir -p /home/ubuntu/git_repos &&
