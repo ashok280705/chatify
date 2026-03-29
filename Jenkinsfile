@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('trigger'){
-            steps {
-               git branch: 'jenkins', url: 'https://github.com/ashok280705/chatify.git'
-            }
-        }
+       
         stage('Build + Push + Deploy on EC2-2') {
             steps {
                 sshagent(['deploy-server']) {
