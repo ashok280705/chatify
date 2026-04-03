@@ -19,6 +19,7 @@ stages {
                 echo "PORT=3000" > .env
                 echo "MONGODB_URI=mongodb://mongodb:27017/chatify" >> .env
                 echo "NEXTAUTH_URL=http://13.201.12.80.nip.io:3000" >> .env
+                echo "NEXTAUTH_SECRET=3kfj83jf83jf93jf93jf93jf93jf93jf93jf93jf" >> .env
                 '''
             }
         }
